@@ -8,6 +8,8 @@
     <!-- tailwind and daisy cdn -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
+    <!-- font-awesome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- tittle -->
     <title>Seikh Mujib's Glacier Guardians</title>
     <!-- config script -->
@@ -18,8 +20,9 @@
             colors: {
               clifford: "#da373d",
               "Ct_btn-bg": "#FF4240",
-              header2: "#131318",
-              description: "rgba(19, 19, 24, 0.60)",
+              'header2': "#131318",
+              'description': "rgba(19, 19, 24, 0.60)",
+              'section-gap':'20rem'
             },
           },
         },
@@ -51,7 +54,7 @@
   </style>
   <body class="ff_manrope">
     <!-- Starting With header -->
-    <header class="container mx-auto rounded-2xl border-2 border-red-500">
+    <header class="container mx-auto">
       <nav class="navbar bg-base-100">
         <div class="navbar-start">
           <div class="dropdown">
@@ -119,29 +122,29 @@
           <div id="slide1" class="carousel-item relative w-full flex flex-col">
             <img src="https://i.postimg.cc/DzzqBRJf/1.png" class="w-full" />
             <div class="absolute left-5 bottom-5 flex justify-between">
-              <a href="#slide4" class="btn btn-circle m-5 bg-blue-500 text-white shadow-lg">❮</a>
-              <a href="#slide2" class="btn btn-circle m-5 bg-blue-500 text-white shadow-lg">❯</a>
+              <a href="#slide4" class="btn btn-circle m-5 bg-blue-50 text-white shadow-lg">❮</a>
+              <a href="#slide2" class="btn btn-circle m-5 bg-blue-50 text-white shadow-lg">❯</a>
             </div>
           </div>
           <div id="slide2" class="carousel-item relative w-full md:h-3/6">
             <img src="https://i.postimg.cc/DzzqBRJf/1.png" class="w-full" />
             <div class="absolute left-5 bottom-5 flex justify-between">
-              <a href="#slide1" class="btn btn-circle m-5 bg-blue-500 text-white shadow-lg">❮</a>
-              <a href="#slide3" class="btn btn-circle m-5 bg-blue-500 text-white shadow-lg">❯</a>
+              <a href="#slide1" class="btn btn-circle m-5 bg-blue-50 text-white shadow-lg">❮</a>
+              <a href="#slide3" class="btn btn-circle m-5 bg-blue-50 text-white shadow-lg">❯</a>
             </div>
           </div>
           <div id="slide3" class="carousel-item relative w-full md:h-3/6">
             <img src="https://i.postimg.cc/DzzqBRJf/1.png" class="w-full" />
             <div class="absolute left-5 bottom-5 flex justify-between">
-              <a href="#slide2" class="btn btn-circle m-5 bg-blue-500 text-white shadow-lg">❮</a>
-              <a href="#slide4" class="btn btn-circle m-5 bg-blue-500 text-white shadow-lg">❯</a>
+              <a href="#slide2" class="btn btn-circle m-5 bg-blue-50 text-white shadow-lg">❮</a>
+              <a href="#slide4" class="btn btn-circle m-5 bg-blue-50 text-white shadow-lg">❯</a>
             </div>
           </div>
           <div id="slide4" class="carousel-item relative w-full md:h-3/6">
             <img src="https://i.postimg.cc/DzzqBRJf/1.png" class="w-full" />
             <div class="absolute left-5 bottom-5 flex justify-between">
-              <a href="#slide3" class="btn btn-circle m-5 bg-blue-500 text-white shadow-lg">❮</a>
-              <a href="#slide1" class="btn btn-circle m-5 bg-blue-500 text-white shadow-lg">❯</a>
+              <a href="#slide3" class="btn btn-circle m-5 bg-blue-50 text-white shadow-lg">❮</a>
+              <a href="#slide1" class="btn btn-circle m-5 bg-blue-50 text-white shadow-lg">❯</a>
             </div>
           </div>
         </div>
@@ -191,30 +194,223 @@
         </div>
       </section>
       <!------------------------------------------------------PROGRAM PACKEGES----------------------------------------------------->
-      <section class="container mx-auto">
+      <section class="container mx-auto my-10 p-6 text-white capitalize">
+        <!-- text-container -->
         <div class="text-center p-2">
           <h2 class="text-header2 text-4xl font-extrabold my-3">Program section</h2>
           <p class="text-description my-3"> Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat dolor. Purus urna in sit nullam proin. </p>
         </div>
-        <div class="grid gap-5 grid-cols-1 md:grid-cols-2 grid-rows-1 md:grid-rows-2">
-          <div class="min-h-60 program-img1 bg-no-repeat bg-cover rounded-2xl p-10">
+        <!-- image grid layout container  -->
+        <div class="grid md:grid gap-5 grid-cols-1 md:grid-cols-2 grid-rows-3  md:grid-rows-3">
+          <div class="min-h-96 program-img1 bg-no-repeat bg-cover bg-center rounded-2xl p-10 flex flex-col items-start justify-center">
             <h2 class="text-4xl font-bold"> junior program </h2>
             <p class="my-6">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum vero quasi voluptate beatae suscipit odit voluptatum ipsam placeat magnam recusandae?Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam, assumenda.</p>
             <a class="bg-Ct_btn-bg rounded btn capitalize text-white font-bold rounded-xl">get ticket</a>
           </div>
-          <div class="min-h-60  bg-orange-300 program-img2 bg-no-repeat bg-cover rounded-2xl p-6">
+          <div class="min-h-80  bg-orange-300 program-img2 bg-no-repeat bg-cover bg-center rounded-2xl p-6 flex flex-col items-start justify-center">
             <h2 class="text-4xl font-bold"> junior program </h2>
             <p class="my-6">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum vero quasi voluptate beatae suscipit odit voluptatum ipsam placeat magnam recusandae?Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam, assumenda.</p>
             <a class="bg-Ct_btn-bg rounded btn capitalize text-white font-bold rounded-xl">get ticket</a>
           </div>
-          <div class="min-h-60 md:pt-60 bg-red-300 col-span-2 program-img3 bg-no-repeat bg-cover rounded-2xl p-6">
+          <div class="min-h-80 h-full md:pt-60 bg-red-300 md:col-span-2 md:row-span-2 program-img3 bg-no-repeat bg-cover bg-center rounded-2xl p-6 flex flex-col items-start justify-center">
             <h2 class="text-4xl font-bold"> junior program </h2>
-            <p class="my-6">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum vero quasi voluptate beatae suscipit odit voluptatum ipsam placeat magnam recusandae?Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam, assumenda.</p>
+            <p class="my-6">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum vero quasi voluptate beatae <br> suscipit odit voluptatum ipsam placeat magnam recusandae?Lorem ipsum dolor <br> sit amet consectetur adipisicing elit. Magnam, assumenda.</p>
             <a class="bg-Ct_btn-bg rounded btn capitalize text-white font-bold rounded-xl ">get ticket</a>
           </div>
         </div>
       </section>
+
+        <!------------------------------------------------------OUR NEW PRODUCTS----------------------------------------------------->
+        <section class="container mx-auto my-section-gap">
+          <div class="text-center p-2">
+            <h2 class="text-header2 text-4xl font-extrabold my-3">Our New Products</h2>
+            <p class="text-description my-3"> Introducing our latest product, the VelocityStrike Series! Whether it's the cutting-edge GuardianShield Helmet, the vibrant SunGlow Cap, or the high-performance BlazePuck and FrostStrike Jersey, each item in the series is meticulously crafted for style, comfort, and functionality. Elevate your game and embrace the essence of innovation with our newest additions—designed to redefine your experience in sports and fashion </p>
+          </div>
+          <!------------------------  Productss card container     --------------------------->
+          <div class="grid grid-cols-1 md:grid-cols-2 grid-rows-6 md:grid-rows-3 gap-5">
+            
+            
+            <div class="bg-blue-50 rounded-2xl shadow-2xl min-h-60 p-5"> <!----product card space-->
+               <div class="flex items-center md:items-center justify-start md:justify-center flex-col md:flex-row gap-5">  <!----product card-->
+               <div class="w-full md:w-1/2">
+                <img src="https://i.postimg.cc/Hxh8ZxGB/5.png" alt="" class="w-full">
+               </div>
+                 
+                 <div class="flex flex-col items-start justify-center w-full md:w-1/2"> <!-- information container -->
+                 
+                  <div class="flex justify-between gap-3  border w-full"><!-- icons container -->
+                         <div class="flex items-center justify-center text-2xl"><i class="fa-solid fa-star text-red-600 m-2"></i> <span class="font-bold  text-black">5.0</span></div>
+                         <div class="flex items-center justify-center"><i class="fa-solid fa-eye"></i> <span class="font-bold text-xl text-black m-3">20</span></div>
+                         <div class="flex items-center justify-center mr-5"><i class="fa-solid fa-heart text-orange-600 text-2xl m-2"></i> <span class="font-bold text-xl text-black">200</span></div>
+                        </div> 
+                       
+                   <h4 class="text-3xl font-extrabold capitalize my-4">  <!-- heading -->
+                    vibrant crimson
+                  
+                  </h4> 
+                   <p class="mb-3">   <!-- description --> 
+                    A vibrant crimson hue adorns this red jacket, evoking a bold and energetic allure. Its sleek design and cozy texture seamlessly blend style with comfort, making it a standout choice for both fashion enthusiasts and those seeking warmth in chilly weather
+                  </p>   
+                   
+                   <div class="flex justify-between">
+                    <div><span class="text-2xl">Price:</span>  <div class="text-3xl font-extrabold  inline">   <span class="text-blue-300">$</span>  <span>400</span>
+                    </div> </div>
+                   </div><!-- price info container -->
+                 </div>
+               </div>
+            </div>
+            <div class="bg-blue-50 rounded-2xl shadow-2xl min-h-60 p-5"> <!----product card space-->
+               <div class="flex items-center md:items-center justify-start md:justify-center flex-col md:flex-row gap-5">  <!----product card-->
+               <div class="w-full md:w-1/2">
+                <img src="https://i.postimg.cc/6prRWtRp/6.png" alt="" class="w-full">
+               </div>
+                 
+                 <div class="flex flex-col items-start justify-center w-full md:w-1/2"> <!-- information container -->
+                 
+                  <div class="flex justify-between gap-3  border w-full"><!-- icons container -->
+                         <div class="flex items-center justify-center text-2xl"><i class="fa-solid fa-star text-red-600 m-2"></i> <span class="font-bold  text-black">5.0</span></div>
+                         <div class="flex items-center justify-center"><i class="fa-solid fa-eye"></i> <span class="font-bold text-xl text-black m-3">20</span></div>
+                         <div class="flex items-center justify-center mr-5"><i class="fa-solid fa-heart text-orange-600 text-2xl m-2"></i> <span class="font-bold text-xl text-black">200</span></div>
+                        </div> 
+                       
+                   <h4 class="text-3xl font-extrabold capitalize my-4">  <!-- heading -->
+                    BlazePuck
+                  
+                  </h4> 
+                   <p class="mb-3">   <!-- description --> 
+                    The BlazePuck, a high-performance hockey ball, boasts a durable rubberized exterior designed for optimal speed and precision on the ice. Its vibrant orange color ensures excellent visibility, while the innovative construction guarantees a smooth glide
+                  </p>   
+                   
+                   <div class="flex justify-between">
+                    <div><span class="text-2xl">Price:</span>  <div class="text-3xl font-extrabold  inline">   <span class="text-blue-300">$</span>  <span>400</span>
+                    </div> </div>
+                   </div><!-- price info container -->
+                 </div>
+               </div>
+            </div>
+            <div class="bg-blue-50 rounded-2xl shadow-2xl min-h-60 p-5"> <!----product card space-->
+               <div class="flex items-center md:items-center justify-start md:justify-center flex-col md:flex-row gap-5">  <!----product card-->
+               <div class="w-full md:w-1/2">
+                <img src="https://i.postimg.cc/Wzz6zCVf/7.png" alt="" class="w-full">
+               </div>
+                 
+                 <div class="flex flex-col items-start justify-center w-full md:w-1/2"> <!-- information container -->
+                 
+                  <div class="flex justify-between gap-3  border w-full"><!-- icons container -->
+                         <div class="flex items-center justify-center text-2xl"><i class="fa-solid fa-star text-red-600 m-2"></i> <span class="font-bold  text-black">5.0</span></div>
+                         <div class="flex items-center justify-center"><i class="fa-solid fa-eye"></i> <span class="font-bold text-xl text-black m-3">20</span></div>
+                         <div class="flex items-center justify-center mr-5"><i class="fa-solid fa-heart text-orange-600 text-2xl m-2"></i> <span class="font-bold text-xl text-black">200</span></div>
+                        </div> 
+                       
+                   <h4 class="text-3xl font-extrabold capitalize my-4">  <!-- heading -->
+                    SunGlow Cap
+                  
+                  </h4> 
+                   <p class="mb-3">   <!-- description --> 
+                    The SunGlow Cap, in a cheerful shade of yellow, radiates positivity and style. Crafted from lightweight and breathable fabric, it provides both sun protection and a fashionable statement, making it the perfect accessory for sunny days and casual outings
+                  </p>   
+                   
+                   <div class="flex justify-between">
+                    <div><span class="text-2xl">Price:</span>  <div class="text-3xl font-extrabold  inline">   <span class="text-blue-300">$</span>  <span>400</span>
+                    </div> </div>
+                   </div><!-- price info container -->
+                 </div>
+               </div>
+            </div>
+            <div class="bg-blue-50 rounded-2xl shadow-2xl min-h-60 p-5"> <!----product card space-->
+               <div class="flex items-center md:items-center justify-start md:justify-center flex-col md:flex-row gap-5">  <!----product card-->
+               <div class="w-full md:w-1/2">
+                <img src="https://i.postimg.cc/WbQ6p5HX/8.png" alt="" class="w-full">
+               </div>
+                 
+                 <div class="flex flex-col items-start justify-center w-full md:w-1/2"> <!-- information container -->
+                 
+                  <div class="flex justify-between gap-3  border w-full"><!-- icons container -->
+                         <div class="flex items-center justify-center text-2xl"><i class="fa-solid fa-star text-red-600 m-2"></i> <span class="font-bold  text-black">5.0</span></div>
+                         <div class="flex items-center justify-center"><i class="fa-solid fa-eye"></i> <span class="font-bold text-xl text-black m-3">20</span></div>
+                         <div class="flex items-center justify-center mr-5"><i class="fa-solid fa-heart text-orange-600 text-2xl m-2"></i> <span class="font-bold text-xl text-black">200</span></div>
+                        </div> 
+                       
+                   <h4 class="text-3xl font-extrabold capitalize my-4">  <!-- heading -->
+                    FrostStrike Jersey
+                  
+                  </h4> 
+                   <p class="mb-3">   <!-- description --> 
+                    The FrostStrike Jersey blends sleek design with premium performance. With its icy blue accents against a crisp white backdrop, this hockey jersey not only exudes a cool aesthetic but also features moisture-wicking technology, ensuring comfort and agility on the rink. Perfect
+                  </p>   
+                   
+                   <div class="flex justify-between">
+                    <div><span class="text-2xl">Price:</span>  <div class="text-3xl font-extrabold  inline">   <span class="text-blue-300">$</span>  <span>400</span>
+                    </div> </div>
+                   </div><!-- price info container -->
+                 </div>
+               </div>
+            </div>
+            <div class="bg-blue-50 rounded-2xl shadow-2xl min-h-60 p-5"> <!----product card space-->
+               <div class="flex items-center md:items-center justify-start md:justify-center flex-col md:flex-row gap-5">  <!----product card-->
+               <div class="w-full md:w-1/2">
+                <img src="https://i.postimg.cc/05X0Fkdg/9.png" alt="" class="w-full">
+               </div>
+                 
+                 <div class="flex flex-col items-start justify-center w-full md:w-1/2"> <!-- information container -->
+                 
+                  <div class="flex justify-between gap-3  border w-full"><!-- icons container -->
+                         <div class="flex items-center justify-center text-2xl"><i class="fa-solid fa-star text-red-600 m-2"></i> <span class="font-bold  text-black">5.0</span></div>
+                         <div class="flex items-center justify-center"><i class="fa-solid fa-eye"></i> <span class="font-bold text-xl text-black m-3">20</span></div>
+                         <div class="flex items-center justify-center mr-5"><i class="fa-solid fa-heart text-orange-600 text-2xl m-2"></i> <span class="font-bold text-xl text-black">200</span></div>
+                        </div> 
+                       
+                   <h4 class="text-3xl font-extrabold capitalize my-4">  <!-- heading -->
+                    GuardianShield Helmet
+                  
+                  </h4> 
+                   <p class="mb-3">   <!-- description --> 
+                    The GuardianShield Helmet combines cutting-edge safety features with a sleek design. With its durable outer shell, advanced impact-absorbing technology, and adjustable fit, this helmet offers unparalleled protection on the field. The matte black finish adds a touch of sophistication,
+                  </p>   
+                   
+                   <div class="flex justify-between">
+                    <div><span class="text-2xl">Price:</span>  <div class="text-3xl font-extrabold  inline">   <span class="text-blue-300">$</span>  <span>400</span>
+                    </div> </div>
+                   </div><!-- price info container -->
+                 </div>
+               </div>
+            </div>
+            <div class="bg-blue-50 rounded-2xl shadow-2xl min-h-60 p-5"> <!----product card space-->
+               <div class="flex items-center md:items-center justify-start md:justify-center flex-col md:flex-row gap-5">  <!----product card-->
+               <div class="w-full md:w-1/2">
+                <img src="https://i.postimg.cc/BnH5jxWs/10.png" alt="" class="w-full">
+               </div>
+                 
+                 <div class="flex flex-col items-start justify-center w-full md:w-1/2"> <!-- information container -->
+                 
+                  <div class="flex justify-between gap-3  border w-full"><!-- icons container -->
+                         <div class="flex items-center justify-center text-2xl"><i class="fa-solid fa-star text-red-600 m-2"></i> <span class="font-bold  text-black">5.0</span></div>
+                         <div class="flex items-center justify-center"><i class="fa-solid fa-eye"></i> <span class="font-bold text-xl text-black m-3">20</span></div>
+                         <div class="flex items-center justify-center mr-5"><i class="fa-solid fa-heart text-orange-600 text-2xl m-2"></i> <span class="font-bold text-xl text-black">200</span></div>
+                        </div> 
+                       
+                   <h4 class="text-3xl font-extrabold capitalize my-4">  <!-- heading -->
+                    VelocityStrike Footbal
+                  
+                  </h4> 
+                   <p class="mb-3">   <!-- description --> 
+                    The VelocityStrike Football is engineered for precision and power on the field. Featuring a textured synthetic leather surface for enhanced grip and aerodynamic stability, this ball ensures optimal performance. Its dynamic design, a fusion of bold colors and geometric patterns, 
+                  </p>   
+                   
+                   <div class="flex justify-between">
+                    <div><span class="text-2xl">Price:</span>  <div class="text-3xl font-extrabold  inline">   <span class="text-blue-300">$</span>  <span>400</span>
+                    </div> </div>
+                   </div><!-- price info container -->
+                 </div>
+               </div>
+            </div>
+
+          </div>
+                 
+
+
+        </section>
     </main>
-    <footer class="my-40"></footer>
+    <footer class="my-40"></footer> 
   </body>
 </html>
